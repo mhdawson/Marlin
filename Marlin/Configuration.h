@@ -490,9 +490,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // High temp V6
-  #define DEFAULT_Kp 6.06
-  #define DEFAULT_Ki 0.26
-  #define DEFAULT_Kd 35.05
+  #define DEFAULT_Kp 16.9
+  #define DEFAULT_Ki 1.44
+  #define DEFAULT_Kd 49.56
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -745,7 +745,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1600, 95 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1600, 418.5 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -974,7 +974,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 45, 0, -1.75 }
+#define NOZZLE_TO_PROBE_OFFSET { 40, 65, -2.66 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1081,7 +1081,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
