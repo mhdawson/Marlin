@@ -490,9 +490,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // High temp V6
-  #define DEFAULT_Kp 6.06
-  #define DEFAULT_Ki 0.26
-  #define DEFAULT_Kd 35.05
+  #define DEFAULT_Kp 27
+  #define DEFAULT_Ki 2.7
+  #define DEFAULT_Kd 65
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -974,7 +974,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 45, 0, -2.75 }
+#define NOZZLE_TO_PROBE_OFFSET { 53, 26, -2.15 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
